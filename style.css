@@ -1,73 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue",
-        sans-serif;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #8bc6ec;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.container {
-    background: #000000;
-    padding: 25px;
-    width: 350px;
-    border-radius: 10px;
-}
-.calc-text {
-    margin-bottom: 20px;
-    padding-left: 5px;
-}
-.calc-text p{
-    width: 100%;
-    font-size: 3.5rem;
-    text-align: end;
-    background: transparent;
-    color: #fff;
-    border: none;
-    outline: none;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-button {
-    background: #333333;
-    color: #fff;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    height: 65px;
-    width: 65px;
-}
-button:active,
-button:focus {
-    filter: brightness(12%);
-}
-.calc-keys {
+.calculator {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px 10px;
-    justify-content: space-between;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
 }
-.calc-keys button {
-    flex: 1 1 calc(25% - 10px);
-    max-width: calc(25% - 10px);
-    border-radius: 50%;
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-.key-zero {
-    flex: 2;
-    width: 50%;
-    border-radius: 30px;
+
+button {
+    width: 45%;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.key-operate {
-    background: #ff9501;
+
+button:hover {
+    background-color: #ddd;
 }
-.key-others {
-    background: #a6a6a6;
-    color: #000000;
+
+button.clear {
+    background-color: #ff4747;
+    color: white;
+}
+
+button.equal {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.98);
 }
